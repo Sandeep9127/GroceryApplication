@@ -1,0 +1,25 @@
+<suite name="Grocery test application" parallel="tests" thread-cound="2">
+	<test name="Chrome test">
+		<parameter name="browser" value="chrome"></parameter>
+		<listeners>
+			<listener class-name="utilities.ExtenetReport"></listener>
+			<listener class-name="utilities.RetryListener"></listener>
+		</listeners>
+		<classes>
+		<class name="testCases.LoginPageTest"></class>
+		<class name="testCases.CategoryTest"></class>
+		</classes>
+   </test>
+<test name="edge test">
+		<parameter name="browser" value="edge"></parameter>
+		<listeners>
+			<listener class-name="utilities.ExtenetReport"></listener>
+			<listener class-name="utilities.RetryListener"></listener>
+		</listeners>
+		<classes>
+		<class name="testCases.LoginPageTest"></class>
+		<class name="testCases.CategoryTest"></class>
+		</classes>
+</test>
+	
+</suite>
