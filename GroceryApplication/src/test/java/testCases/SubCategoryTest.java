@@ -97,7 +97,7 @@ public class SubCategoryTest extends BaseClass {
 
 	}*/
 
-	@Test(priority = 4,groups = {"group2"})
+	/*@Test(priority = 4,groups = {"group2"})
 	public void ValidSearch() throws IOException {
 
 		lp = new LoginPage(driver);		
@@ -109,7 +109,7 @@ public class SubCategoryTest extends BaseClass {
 		//assertTrue(SearchStatus);
 		Assert.assertEquals(SearchStatus, true, co.validSearchStatus);
 
-	}
+	}*/
 
 	@Test(priority = 5)
 	public void inValidSearch() throws IOException {

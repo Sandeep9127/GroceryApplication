@@ -121,7 +121,7 @@ public class SubCategory {
 	public void doSearchValid() {
 		search.click();
 		gu.selectDropdownWithIndex(searchCategory, 6);
-		searchInput.sendKeys("Blanche");
+		searchInput.sendKeys("blanche");
 		searchbutton.click();
 
 	}
@@ -156,7 +156,7 @@ public class SubCategory {
 	public void doSearchInValid() {
 		search.click();
 		gu.selectDropdownWithIndex(searchCategory, 3);
-		searchInput.sendKeys("Blanch");
+		searchInput.sendKeys("####");
 		searchbutton.click();
 
 	}
