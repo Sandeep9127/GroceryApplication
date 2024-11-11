@@ -42,7 +42,7 @@ public String alerttext(WebDriver driver) {
 	
 	return driver.switchTo().alert().getText();
 }
-public void dragAndDrop(WebElement sorce, WebElement target,WebDriver driver) {
+public void dragAndDrop1(WebElement sorce, WebElement target,WebDriver driver) {
 	
 	Actions obj1=new Actions(driver);
 	obj1.dragAndDrop(sorce, target).perform();
