@@ -19,7 +19,7 @@ public class ManageNews {
 	public ManageNews(WebDriver driver) {
 		
 		this.driver=driver;
-		 PageFactory.initElements(driver, this);//with page factory,init element is staic method of page factory.
+		 PageFactory.initElements(driver, this);
 		 
 	}
 	

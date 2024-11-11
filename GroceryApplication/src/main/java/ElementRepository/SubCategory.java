@@ -18,7 +18,7 @@ public class SubCategory {
 	public SubCategory(WebDriver driver) {
 
 		this.driver = driver;
-		PageFactory.initElements(driver, this);// with page factory,init element is staic method of page factory.
+		PageFactory.initElements(driver, this);
 
 	}
 
@@ -135,23 +135,7 @@ public class SubCategory {
 	}
 	
 
-	public boolean readTableSearchElement() {
-
-		List<WebElement> tableColumn = driver
-				.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr/td[1]"));
-		int flag = 0;
-		boolean value = false;
-		for (int i = 0; i < tableColumn.size(); i++) {
-			if (tableColumn.get(i).getText().equals("Blanche")) {
-
-				flag = 1;
-				value = true;
-			}
-
-		}
-		return value;
-
-	}
+	
 
 	public void doSearchInValid() {
 		search.click();

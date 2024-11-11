@@ -10,7 +10,7 @@ public class HomePage {
 	 public HomePage(WebDriver driver)
 	 {
 		 this.driver=driver;
-		 PageFactory.initElements(driver, this);//with page factory,init element is staic method of page factory.
+		 PageFactory.initElements(driver, this);
 	 }
 	 
 	 @FindBy(xpath ="//span[text()='7rmart supermarket']")

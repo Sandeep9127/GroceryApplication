@@ -43,7 +43,7 @@ public class SubCategoryTest extends BaseClass {
 	}
 
 	@Test(priority = 1,groups = {"group1"})
-	public void DeleteItem() throws IOException {
+	public void deleteItemAlertTest() throws IOException {
 
 		
 		lp = new LoginPage(driver);
@@ -60,7 +60,7 @@ public class SubCategoryTest extends BaseClass {
 	}
 
 	@Test(priority = 2,groups = {"group2"})
-	public void tableDeleteItem() throws IOException {
+	public void checkdeletedItemExists() throws IOException {
 
 		
 		
@@ -83,36 +83,10 @@ public class SubCategoryTest extends BaseClass {
 
 	}
 
-	/*@Test(priority = 3)
-	public void DeleteTableCheck() {
-
-		sc = new SubCategory(driver);
-		lp = new LoginPage(driver);
-		lp.LoginData("admin", "admin");
-		sc.goToSubCategory();
-		boolean TableStatus = sc.readTableDeleteElement();
-		System.out.println(TableStatus);
-		assertTrue(TableStatus);
-		System.out.println(TableStatus);
-
-	}*/
-
-	/*@Test(priority = 4,groups = {"group2"})
-	public void ValidSearch() throws IOException {
-
-		lp = new LoginPage(driver);		
-		hp=lp.LoginData(groceryData(1,0), groceryData(1,1));
-		sc=hp.goToSubCategory();
-		hp.goToSubCategory();
-		sc.doSearchValid();
-		boolean SearchStatus = sc.readTableSearchElement();
-		//assertTrue(SearchStatus);
-		Assert.assertEquals(SearchStatus, true, co.validSearchStatus);
-
-	}*/
+	
 
 	@Test(priority = 5)
-	public void inValidSearch() throws IOException {
+	public void doinValidSearch() throws IOException {
 
 		lp = new LoginPage(driver);		
 		hp=lp.LoginData(groceryData(1,0), groceryData(1,1));

@@ -1,8 +1,8 @@
 <suite name="Grocery test application">
 	<test name="Chrome test">
 		<listeners>
-			<listener class-name="utilities.ExtenetReport"></listener>
-			<listener class-name="utilities.RetryListener"></listener>
+			<listener class-name="listeners.ExtenetReport"></listener>
+			<listener class-name="listeners.RetryListener"></listener>
 		</listeners>
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>

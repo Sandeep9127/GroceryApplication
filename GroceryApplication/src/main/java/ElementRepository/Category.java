@@ -14,15 +14,10 @@ public class Category {
 	public Category(WebDriver driver) {
 		
 		this.driver=driver;
-		 PageFactory.initElements(driver, this);//with page factory,init element is staic method of page factory.
+		 PageFactory.initElements(driver, this);
 		 
 	}
-	/*@FindBy(name="username")
-	 WebElement userNameField;
-	 @FindBy(name="password")
-	 WebElement passWordField;
-	 @FindBy(xpath ="//button[text()=\"Sign In\"]")
-	 WebElement button1;*/
+	
 
 	@FindBy(xpath = "//a[contains(@href,'https://groceryapp.uniqassosiates.com/admin/list-category')]")
 	WebElement categorylink;
@@ -42,9 +37,7 @@ public class Category {
 	WebElement submit;
 	public void validSearch()
 	{  
-		/*userNameField.sendKeys("admin");
-	   passWordField.sendKeys("admin");
-	   button1.click();*/
+		
 		
 		categorylink.click();
 		searchButton.click();
@@ -56,9 +49,7 @@ public class Category {
 	}
 	public void invalidSearch()
 	{  
-		/*userNameField.sendKeys("admin");
-	   passWordField.sendKeys("admin");
-	   button1.click();*/
+		
 		
 		categorylink.click();
 		searchButton.click();

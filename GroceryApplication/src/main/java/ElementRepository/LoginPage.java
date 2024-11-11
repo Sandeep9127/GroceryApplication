@@ -14,10 +14,9 @@ WebDriver driver;
  public LoginPage(WebDriver driver)
  {
 	 this.driver=driver;
-	 PageFactory.initElements(driver, this);//with page factory,init element is staic method of page factory.
+	 PageFactory.initElements(driver, this);
  }
-// By UserNameField=By.name("username"); with out page factory
- // WebElement element=driver.FindElement(UserNameField);
+
  @FindBy(name="username")
  WebElement userNameField;
  @FindBy(name="password")
@@ -33,7 +32,7 @@ WebDriver driver;
  }
 public HomePage LoginData(String userName,String passWord)
  {
-	// userNameField.sendKeys(userName);
+	
 	gu.sendKeyFunction(userNameField,userName);
 	 passWordField.sendKeys(passWord);
 	 button.click();
@@ -41,22 +40,7 @@ public HomePage LoginData(String userName,String passWord)
  }
 
 
-/*@FindBy(name="password")
- 
- WebElement passWordField;
- 
- public void LoginData2()
- {
-	 passWordField.sendKeys("admin");
- }
-@FindBy(xpath ="//button[text()=\"Sign In\"]")
- 
- WebElement button;
- 
- public void LoginData3()
- {
-	 button.click();
- }*/
+
  
  
 

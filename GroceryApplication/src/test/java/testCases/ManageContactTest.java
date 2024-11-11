@@ -29,7 +29,7 @@ public class ManageContactTest extends BaseClass{
 		Assert.assertEquals(value, true, co.invalidUpdateContactStatus);
   }
   @Test(priority = 2)
-  public void ChecktabelAfterTest() throws IOException {
+  public void checktableAfterUpdate() throws IOException {
 	  mc = new ManageContact(driver);
 		lp = new LoginPage(driver);
 		eu=new ExcelUtility();

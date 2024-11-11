@@ -20,7 +20,7 @@ public class CategoryTest extends BaseClass {
 	Constant co;
 	
   @Test
-  public void categoryValidSearch() throws IOException {
+  public void categoryDoingValidSearch() throws IOException {
 	  
 	  lp = new LoginPage(driver);		
 		hp=lp.LoginData(groceryData(1,0), groceryData(1,1));
@@ -31,7 +31,7 @@ public class CategoryTest extends BaseClass {
 	  
   }
   @Test
-  public void categoryInvalidSearch() throws IOException {
+  public void categoryDoingInvalidSearch() throws IOException {
 	  
 	  lp = new LoginPage(driver);		
 		hp=lp.LoginData(groceryData(1,0), groceryData(1,1));

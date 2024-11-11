@@ -18,7 +18,7 @@ public class ManageContact {
 		 public ManageContact(WebDriver driver)
 		 {
 			 this.driver=driver;
-			 PageFactory.initElements(driver, this);//with page factory,init element is staic method of page factory.
+			 PageFactory.initElements(driver, this);
 		 }
 		 
 		 @FindBy(xpath = "//a[contains(@href,'https://groceryapp.uniqassosiates.com/admin/list-contact')]")
@@ -34,11 +34,7 @@ public class ManageContact {
 		 @FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 			WebElement alert;
 		 
-		 /*public void getDetailBeforeUpdate()
-		 {   
-			 ManageContactLink.click();
-			 DeliveryChargeLimitFiledBeforeUpdate=deliveryChargeLimitField.getText(); 
-		 }*/
+		
 		 
 		 public void UpdateTableDetail()
 		 {
